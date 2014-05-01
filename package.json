@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-reveal",
   "description": "Reveal sections of the page in series",
   "main": "index.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "gitbook": "*"
   },
@@ -18,7 +18,7 @@
   "dependencies": {
     "swig": "^1.3.2",
     "lodash": "^2.4.1",
-    "marked": "^0.3.2"
+    "marked": "https://github.com/mrpotes/marked/tarball/html-structure"
   },
   "devDependencies": {},
   "scripts": {
