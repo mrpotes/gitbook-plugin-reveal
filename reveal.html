@@ -3,7 +3,7 @@
         <div class="col-sm-4 btn-group-vertical">
             {% for reveal in reveals %}
             <a href="#" class="btn btn-default" href="#" data-reveal="reveal-{{ reveal.id }}">
-                {{ reveal.title }}
+                {% autoescape false %}{{ reveal.title }}{% endautoescape %}
             </a>
             {% endfor %}
         </div>

@@ -4,7 +4,7 @@ require(["jQuery", "gitbook"], function($, gitbook) {
     $(".book").on("click", "a[data-reveal]", function(e) {
       e.preventDefault();
       $(this).closest("div.reveal").find(".revealable").addClass("hidden");
-      $("#"+$(this).data("reveal")).removeClass("hidden");
+      $(document.getElementById($(this).data("reveal"))).removeClass("hidden");
       $(this).siblings(".btn-primary").removeClass("btn-primary");
       $(this).addClass("btn-primary");
     });
